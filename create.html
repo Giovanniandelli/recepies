@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bare - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/create.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Crea la tua ricetta</h1>
+        <p class="lead">Completa le informazioni e pubblica la ricetta!</p>
+        
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form id="recepie" onsubmit="return saveRecepie(event);">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nome Ricetta</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Inserisci la ricetta">
+      
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Numero di persone</label>
+                  <input type="text" class="form-control" id="Npersone" aria-describedby="emailHelp" placeholder="Numero di persone">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Tempo di preparazione</label>
+                  <input type="text" class="form-control" id="Tempoprep" aria-describedby="emailHelp" placeholder="Tempo di preparazione">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Tempo di cottura</label>
+                  <input type="text" class="form-control" id="Tempocot" aria-describedby="emailHelp" placeholder="Tempo di cottura">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Difficoltà</label>
+                  <input type="text" class="form-control" id="diff" aria-describedby="emailHelp" placeholder="Difficoltà">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Costo</label>
+                  <input type="number" class="form-control" id="costo" aria-describedby="emailHelp" placeholder="Costo">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Procedimento</label>
+                  <textarea class="form-control" id="description" aria-describedby="procedimento" placeholder="Descrivi il procedimento"></textarea>
+              </div>
+              <button class="btn btn-primary" >Submit</button>
+            </form>
+        </div>
+      </div>
+   
+   
+  </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/models/recepie.js"></script>
+  <script src='js/controllers/create.js'></script>
+</body>
+
+</html>
