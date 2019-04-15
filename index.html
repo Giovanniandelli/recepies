@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Recepies, l'app per scrivere e condividere le tue ricette.">
-  <meta name="author" content="Jack Degl'Innocenti <info@giacomo.in>">
+  <meta name="author" content="Giovanni Iande">
 
   <title>Recepies</title>
 
@@ -14,11 +14,11 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="css/main.css" rel="stylesheet">
   <link href="css/shop-homepage.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,30 +26,34 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html" style="font-family: 'Crimson Text', serif;">Recepies</a>
+      <a class="navbar-brand logo-style" href="index.html">RecePies</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">
-              <i class="fas fa-toilet-paper"></i>
-              Home
+            <a class="nav-link" href="index.html">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-         
-          <li class="nav-item">
             <a class="nav-link" href="create.html">
-                <i class="fas fa-compress-arrows-alt"></i>
-              Create</a>
+              <i class="fas fa-utensil-spoon"></i>
+              Crea Ricetta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">
+              <i class="fas fa-search"></i>
+              Cerca
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">
+              <i class="fas fa-user"></i>
+              Il mio profilo
+            </a>
           </li>
         </ul>
       </div>
@@ -143,17 +147,17 @@
       </div>
     </div>
   </div>
-      
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      
-        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-        <script src="js/firebase.js"> </script>
-        <script src="js/controllers/index.js"></script>
-        <script type="text/javascript" src="js/controllers/index.js" ></script>
-      
-      </body>
-      
-      </html>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src='js/models/recepie.js' ></script>
+  <script src='js/controllers/index.js' ></script>
+
+</body>
+
+</html>
