@@ -7,8 +7,8 @@ function loadRecepie(){
          var recepie = item.data();
          var recepieId = GetIdFromUrl();
           addRecepie(recepie,recepieId);
-         // console.log(recepieIdFromDb);
-         // console.log(recepieElementFromDb);
+         console.log(recepieIdFromDb);
+         console.log(recepieElementFromDb);
         } );
       
       };
